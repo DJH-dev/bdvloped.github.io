@@ -22,6 +22,7 @@ export default ({ data }) => (
               `}
             >
               {node.frontmatter.title}{" "}
+              <br />
               <span
                 css={css`
                   color: #bbb;
