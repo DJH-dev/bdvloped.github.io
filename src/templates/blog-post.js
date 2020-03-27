@@ -8,7 +8,15 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div className='blogPost' css={css`grid-column: 1 / -1;`}>
+      <div className='blogPost' 
+        css={css`
+          grid-column: 1 / -1;
+          @media(max-width: 740px){
+            max-width: 75%;
+            justify-self: center;
+          }
+          `
+          }>
         <h2>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
