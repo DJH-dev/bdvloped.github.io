@@ -12,7 +12,7 @@ export default ({ data }) => {
         css={css`
           grid-column: 1 / -1;
           @media(max-width: 740px){
-            max-width: 75%;
+            max-width: 95%;
             justify-self: center;
           }
           `

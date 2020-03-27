@@ -22,7 +22,13 @@ export default ({ children }) => {
           display: grid;
           margin: 0 auto;
           max-width: 970px;
-        
+          @media(max-width: 740px){
+            max-width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
           grid-gap: 10px 40px;
           grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
           grid-auto-rows: minmax(225px, auto);
@@ -35,6 +41,10 @@ export default ({ children }) => {
                 margin-right: 5px;
                 flex: 0 1 100%;
                 grid-column: 1 / -1;
+
+                @media(max-width: 740px){
+                  text-align: center;
+                }
                 `}
         >
                 <Link to={`/`}>
