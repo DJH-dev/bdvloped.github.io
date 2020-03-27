@@ -1,5 +1,5 @@
 import React from "react"
-import { css } from "@emotion/core"
+import { jsx, css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
@@ -22,10 +22,13 @@ export default ({ children }) => {
           display: grid;
           margin: 0 auto;
           max-width: 970px;
+          @media(max-width: 964px){
+            max-width: 75%;
+          }
           grid-gap: 10px 40px;
           grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
           grid-auto-rows: minmax(225px, auto);
-         ` 
+         `
         }
     >
         <header className='header'
