@@ -24,7 +24,7 @@ export default ({ children }) => {
           max-width: 970px;
           grid-gap: 10px 40px;
           grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
-          grid-auto-rows: minmax(300px, auto);
+          grid-auto-rows: minmax(225px, auto);
          ` 
         }
     >
@@ -39,7 +39,7 @@ export default ({ children }) => {
                 <Link to={`/`}>
                     <h2
                         css={css`
-                        margin-top:${rhythm(1.5)};
+                        margin-top:${rhythm(.5)};
                         margin-bottom: ${rhythm(2)};
                         display: inline-block;
                         font-style: normal;
